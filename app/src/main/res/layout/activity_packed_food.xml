@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PackedFood">
+
+        <TextView
+            android:id="@+id/pdt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="Product Name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+    android:id="@+id/pdtname"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    android:background="@drawable/rectangleview"
+
+    android:ems="10"
+    android:hint="Enter Here"
+    android:inputType="textPersonName"
+    android:padding="3dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pdt1" />
+
+    <TextView
+        android:id="@+id/pdt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Product Description"
+        app:layout_constraintStart_toStartOf="@+id/pdtname"
+        app:layout_constraintTop_toBottomOf="@+id/pdtname" />
+
+    <EditText
+        android:id="@+id/pdtdescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:hint="Enter Here"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pdt2"
+        android:background="@drawable/rectangleview"
+        android:padding="3dp"/>
+
+    <TextView
+        android:id="@+id/pdt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Exp. Date"
+        app:layout_constraintStart_toStartOf="@+id/pdtdescription"
+        app:layout_constraintTop_toBottomOf="@+id/pdtdescription" />
+
+    <TextView
+        android:id="@+id/pdtexp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:ems="10"
+        android:hint="Select Date"
+        android:inputType="none"
+        app:layout_constraintStart_toStartOf="@+id/pdt3"
+        app:layout_constraintTop_toBottomOf="@+id/pdt3"
+        android:background="@drawable/rectangleview"
+        android:padding="3dp"
+        />
+
+    <TextView
+        android:id="@+id/pdt4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="MRP(Rs.)"
+        app:layout_constraintStart_toStartOf="@+id/pdtexp"
+        app:layout_constraintTop_toBottomOf="@+id/pdtexp" />
+
+    <EditText
+        android:id="@+id/pdtMRP"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter MRP"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="@+id/pdt4"
+        app:layout_constraintTop_toBottomOf="@+id/pdt4"
+        android:background="@drawable/rectangleview"
+        android:padding="3dp"/>
+
+    <EditText
+        android:id="@+id/pdtDisMRP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Discounted MRP"
+        app:layout_constraintBottom_toBottomOf="@+id/pdtMRP"
+        app:layout_constraintStart_toEndOf="@+id/pdtMRP"
+        app:layout_constraintTop_toTopOf="@+id/pdtMRP"
+        android:background="@drawable/rectangleview"
+        android:padding="3dp"/>
+
+    <TextView
+        android:id="@+id/pdt5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Contact Person"
+        app:layout_constraintStart_toStartOf="@+id/pdtMRP"
+        app:layout_constraintTop_toBottomOf="@+id/pdtMRP" />
+
+    <EditText
+        android:id="@+id/pdtcontact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:hint="Enter Contact Detail"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.151"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pdt5"
+        android:background="@drawable/rectangleview"
+        android:padding="3dp"/>
+
+    <EditText
+        android:id="@+id/pdtaddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:hint="Address"
+        android:inputType="textMultiLine"
+        android:lines="2"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pdt7"
+        android:background="@drawable/rectangleview"
+        android:padding="3dp"/>
+
+    <fragment
+
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pdtaddress"
+        tools:context=".PackedFood" />
+
+    <TextView
+        android:id="@+id/pdt7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Pickup Point"
+        app:layout_constraintStart_toStartOf="@+id/pdtcontact"
+        app:layout_constraintTop_toBottomOf="@+id/pdtcontact" />
+
+    <Button
+        android:id="@+id/fooddonate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/Mycolor"
+        android:text="Donate Now"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Mycolor"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
